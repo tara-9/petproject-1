@@ -15,3 +15,6 @@ jobs:
           SECRETS: |
             TEST_1
             TEST_2
+          env:
+            TEST_1: ${{secrets.TEST_1}}
+            TEST_2: ${{secrets.TEST_2}}
