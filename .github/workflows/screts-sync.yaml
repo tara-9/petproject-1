@@ -1,5 +1,6 @@
 name: secrets-sync
-
+on:
+  push
 jobs:
   secrets-sync:
     runs-on: ubuntu-latest
