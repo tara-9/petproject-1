@@ -1,6 +1,6 @@
 name: secrets-sync
 on:
-  push
+  [push, workflow_dispatch]
 jobs:
   secrets-sync:
     runs-on: ubuntu-latest
