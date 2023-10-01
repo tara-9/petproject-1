@@ -1,0 +1,16 @@
+name: secrets-sync
+
+jobs:
+  secrets-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Secrets Sync Action
+        uses: jpoehnelt/secrets-sync-action@v1.7.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.access_token }}
+          REPOSITORIES: |
+            tara-9/petproject-2
+          repositories_list_regex: false
+          SECRETS: |
+            TEST_1
+            TEST_2
